@@ -42,8 +42,10 @@ tokens_used = {
     "in": 0,
     "out": 0,
 }
+
 event_q = Queue()
 class CustomEventHandler(BaseEventHandler):
+
     def handle(self, event: BaseEvent) -> None:
         if isinstance(event, RetrievalStartEvent):
             event_q.put(EventToSend(

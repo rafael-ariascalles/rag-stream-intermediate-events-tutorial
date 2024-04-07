@@ -19,6 +19,22 @@ Example `.env` file:
 OPENAI_API_KEY=<openai_api_key>
 ```
 
+```env
+OPENAI_API_KEY=<openai_api_key>
+# LLM (Language Model) Configuration
+# MODEL=gpt-4
+# LLM_TEMPERATURE=0.7 # Assuming DEFAULT_TEMPERATURE is 0.7. Adjust if different.
+# LLM_MAX_TOKENS=1200
+
+# Embedding Configuration
+# EMBEDDING_MODEL=ada
+# EMBEDDING_DIM=512
+
+# Settings for chunk processing
+# CHUNK_SIZE=1024
+# CHUNK_OVERLAP=20
+```
+
 Second, generate the embeddings of the documents in the `./data` directory (if this folder exists - otherwise, skip this step):
 
 ```
